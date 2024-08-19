@@ -15,18 +15,14 @@ NWPU-RESISC45
 Train the model by 21 labeled data of ucm dataset:
 
 ```
-python train.py --dataset ucm --num-labeled 21 --arch edgenext --batch-size 8 --lr 0.0001 --expand-labels --seed 7 --out results/cifar10@4000.5
+python train.py --dataset ucm --num-labeled 21 --arch edgenext --batch-size 8 --lr 0.0001 --expand-labels --seed 7 --out results/ucm@21.7
 ```
 
-Train the model by 10000 labeled data of CIFAR-100 dataset by using DistributedDataParallel:
+Train the model by 45 labeled data of nwpu dataset by using DistributedDataParallel:
 ```
-python -m torch.distributed.launch --nproc_per_node 4 ./train.py --dataset cifar100 --num-labeled 10000 --arch wideresnet --batch-size 16 --lr 0.03 --wdecay 0.001 --expand-labels --seed 5 --out results/cifar100@10000
+python -m torch.distributed.launch --nproc_per_node 4 ./train.py --dataset nwpu --num-labeled 45 --arch edgenext --batch-size 8 --lr 0.0006 --wdecay 0.001 --expand-labels --seed 7 --out results/nwpu@45
 ```
 
-### Monitoring training progress
-```
-tensorboard --logdir=<your out_dir>
-```
 
 ## Requirements
 - python 3.6+
@@ -48,12 +44,4 @@ tensorboard --logdir=<your out_dir>
 - [Unofficial PyTorch Reimplementation of RandAugment](https://github.com/ildoonet/pytorch-randaugment)
 - [PyTorch image models](https://github.com/rwightman/pytorch-image-models)
 
-## Citations
-```
-@article{sohn2020fixmatch,
-    title={FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence},
-    author={Kihyuk Sohn and David Berthelot and Chun-Liang Li and Zizhao Zhang and Nicholas Carlini and Ekin D. Cubuk and Alex Kurakin and Han Zhang and Colin Raffel},
-    journal={arXiv preprint arXiv:2001.07685},
-    year={2020},
-}
-```
+
