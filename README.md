@@ -33,9 +33,6 @@ python -m torch.distributed.launch --nproc_per_node 4 ./train.py --dataset nwpu 
 - tqdm
 - apex (optional)
 
-## My other implementations
-- [Meta Pseudo Labels](https://github.com/kekmodel/MPL-pytorch)
-- [UDA for images](https://github.com/kekmodel/UDA-pytorch)
 
 
 ## References
