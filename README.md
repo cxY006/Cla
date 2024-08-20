@@ -1,21 +1,26 @@
 # SLNet
-This is an unofficial PyTorch implementation of [Lightweight Semi-Supervised Scene Classification Network(SLNet) for Remote Sensing Images]
+This is an unofficial PyTorch implementation of [Lightweight Semi-Supervised Scene Classification Network for Remote Sensing Images]
 
 
 ## dataset
 
-UC-Merced
-AID
-NWPU-RESISC45
+train:test=8:2
+UC-Merced         Labeled 1  2  5  10     
+AID               Labeled 1  2  5  10
+NWPU-RESISC45     Labeled 1  2  5  10
 
 
 ## Usage
 
 ### Train
 Train the model by 21 labeled data of ucm dataset:
-
 ```
-python train.py --dataset ucm --num-labeled 21 --arch edgenext --batch-size 8 --lr 0.0001 --expand-labels --seed 7 --out results/ucm@21.7
+python train.py --dataset ucm --num-labeled 21 --arch edgenext --batch-size 8 --lr 0.00001 --expand-labels --seed 7 --out results/ucm@21.7
+```
+
+Train the model by 30 labeled data of ucm dataset:
+```
+python train.py --dataset aid --num-labeled 30 --arch edgenext --batch-size 8 --lr 0.0001 --expand-labels --seed 7 --out results/aid@30.7
 ```
 
 Train the model by 45 labeled data of nwpu dataset by using DistributedDataParallel:
@@ -36,9 +41,9 @@ python -m torch.distributed.launch --nproc_per_node 4 ./train.py --dataset nwpu 
 
 
 ## References
-- [Official TensorFlow implementation of FixMatch](https://github.com/google-research/fixmatch)
-- [Unofficial PyTorch implementation of MixMatch](https://github.com/YU1ut/MixMatch-pytorch)
-- [Unofficial PyTorch Reimplementation of RandAugment](https://github.com/ildoonet/pytorch-randaugment)
+- [Official pytorch implementation of FixMatch](https://github.com/kekmodel/FixMatch-pytorch.git))
+- [Unofficial PyTorch implementation of edgenext](https://github.com/mmaaz60/EdgeNeXt.git)
+- [Unofficial PyTorch Reimplementation of adl](https://github.com/junsukchoe/ADL.git)
 - [PyTorch image models](https://github.com/rwightman/pytorch-image-models)
 
 
