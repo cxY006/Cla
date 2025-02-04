@@ -5,9 +5,9 @@ This is an unofficial PyTorch implementation of [Lightweight Semi-Supervised Sce
 ## dataset
 
 train:test=8:2
--UC-Merced         Labeled 1  2  5  10     [link](http://vision.ucmerced.edu/datasets/landuse.html)
--AID               Labeled 1  2  5  10     [link](https://captain-whu.github.io/AID)
--NWPU-RESISC45     Labeled 1  2  5  10     [link](http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html)
+ - UC-Merced         Labeled 1  2  5  10     [link](http://vision.ucmerced.edu/datasets/landuse.html)
+ - AID               Labeled 1  2  5  10     [link](https://captain-whu.github.io/AID)
+ - NWPU-RESISC45     Labeled 1  2  5  10     [link](http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html)
 
 
 ## Usage
