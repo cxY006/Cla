@@ -1,6 +1,6 @@
 # SLNet
 This is an unofficial PyTorch implementation of [Lightweight Semi-Supervised Scene Classification Network for Remote Sensing Images]
-
+[The Visual Computer]
 
 ## dataset
 
