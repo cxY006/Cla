@@ -1,6 +1,8 @@
-# SLNet
-This is an unofficial PyTorch implementation of [Lightweight Semi-Supervised Scene Classification Network for Remote Sensing Images]
+# Semi-Supervised EdgeKRAE
+This is an unofficial PyTorch implementation of [Semi-Supervised EdgeKRAE: Lightweight Remote Sensing Scene Classification via Key Region Adaptive Enhancement]
 [The Visual Computer]
+
+![overall architectural](https://user-images.githubusercontent.com/12345678/123456789-abc12345.png)
 
 ## dataset
 
