@@ -2,7 +2,8 @@
 This is an unofficial PyTorch implementation of [Semi-Supervised EdgeKRAE: Lightweight Remote Sensing Scene Classification via Key Region Adaptive Enhancement]
 [The Visual Computer]
 
-![overall architectural](https://user-images.githubusercontent.com/12345678/123456789-abc12345.png)
+![overall architectural](https://user-images.githubusercontent.com/cxY006/Cla/overall.png)
+This paper enhances the model's perception ability of important objects in the scene by dynamically strengthening the features of key areas and weakening non-key areas at the same time.
 
 ## dataset
 
