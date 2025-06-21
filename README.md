@@ -4,7 +4,7 @@ This is an unofficial PyTorch implementation of [Semi-Supervised EdgeKRAE: Light
 
 
 ## overall architecture
-![overall architectural](/cxY006/Cla/overall.png)
+![overall architectural](https://raw.githubusercontent.com/cxY006/Cla/overall.png)
 ```
 This paper enhances the model's perception ability of important objects in the scene by dynamically strengthening the features of key areas and weakening non-key areas at the same time.
 
